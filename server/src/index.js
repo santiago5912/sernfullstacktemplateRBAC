@@ -7,6 +7,7 @@ import logger from "./config/logger.js";
 
 
 const PORT = process.env.PORT || 5000;
+const HOST = process.env.HOST || "0.0.0.0";
 
 // logger.info("TEST INFO");
 // logger.error("TEST ERROR");
@@ -78,9 +79,9 @@ const startServer = async () => {
       // await db.sequelize.sync();
     }
 
-    app.listen(PORT, () => {
+    app.listen(PORT, HOST, () => {
       // console.log("🔥 Server running");
-      logger.info(`Server started on port ${PORT}`);
+      logger.info(`Server started on ${HOST}:${PORT}`);
 
       // logger.info("Server started successfully", {
       //   port: PORT,
