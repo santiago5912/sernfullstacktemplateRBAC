@@ -1,5 +1,3 @@
-import dotenv from "dotenv";
-dotenv.config();
 import app from "./app.js";
 import db from "./models/index.js";
 import logger from "./config/logger.js";

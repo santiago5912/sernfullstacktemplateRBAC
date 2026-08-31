@@ -2,9 +2,6 @@
 import winston from "winston";
 import fs from "fs";
 import path from "path";
-import dotenv from "dotenv";
-dotenv.config();
-
 // const logDir = path.resolve("logs"); // ✅ absolute path
 
 import { fileURLToPath } from "url";

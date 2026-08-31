@@ -54,7 +54,7 @@ app.set("trust proxy", 1);
 /**
  * 🔹 Health Check Route
  */
-app.applyget("/", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).json({
     success: true,
     message: "Server is running 🚀",
